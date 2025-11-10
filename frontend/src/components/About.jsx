@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../index.css";
+import { Helmet } from "react-helmet";
 
 const About = () => {
   const contentRef = useRef(null);
