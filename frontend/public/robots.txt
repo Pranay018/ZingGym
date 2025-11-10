@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Disallow admin or private paths (if any)
+Disallow: /admin/
+Disallow: /private/
+
+# Point to your sitemap
+Sitemap: https://zinggym.site/sitemap.xml
