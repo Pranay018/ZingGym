@@ -5,7 +5,7 @@ import "../index.css";
 
 const members = [
   {
-    image: "/images/member1.jpg",
+    image: "/images/member1.webp",
     title: "Ranjit",
     subtitle: "Fitness freak",
     handle: "@ranjit_gupta_29",
@@ -14,7 +14,7 @@ const members = [
     url: "#"
   },
   {
-    image: "/images/member2.jpg",
+    image: "/images/member2.webp",
     title: "Roshan",
     subtitle: "Fitness enthusiast",
     handle: "@fit.roshu",
@@ -23,7 +23,7 @@ const members = [
     url: "#"
   },
   {
-    image: "/images/member3.jpg",
+    image: "/images/member3.webp",
     title: "Amit",
     subtitle: "fit and strong",
     handle: "@amit._gupta28",
@@ -32,7 +32,7 @@ const members = [
     url: "#"
   },
   {
-    image: "/images/member4.jpg",
+    image: "/images/member4.webp",
     title: "Chaitanya",
     subtitle: "Muscle Builder",
     handle: "@shredded_chaitanya",

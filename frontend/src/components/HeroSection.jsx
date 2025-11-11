@@ -30,7 +30,7 @@ const HeroSection = () => {
         <div className="glow-layer"></div>
         <div className="particles"></div>
         <div className="fog-layer"></div>
-        <img src="/images/hero_image.png" alt="Gym Workout" className="hero-image floating" loading="lazy" />
+        <img src="/images/hero_image.webp" alt="Gym Workout" className="hero-image floating"/>
       </div>
     </section>
   );

@@ -9,7 +9,7 @@ const Navbar = () => {
       {/* Left: Logo */}
       <div className="nav-logo">
   <a href="#home" onClick={() => setMenuOpen(false)}>
-    <img src="/images/zing_logo.png" alt="Gym Logo" className="logo-img" loading="lazy"/>
+    <img src="/images/zing_logo.webp" alt="Gym Logo" className="logo-img" loading="lazy"/>
   </a>
 </div>
 

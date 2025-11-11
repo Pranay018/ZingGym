@@ -70,7 +70,7 @@ const About = () => {
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
         >
-          <img src="/images/zing_logo.png" alt="Gym Training" />
+          <img src="/images/zing_logo.webp" alt="Gym Training" />
         </div>
       </div>
     </section>

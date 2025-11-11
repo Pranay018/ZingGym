@@ -7,25 +7,25 @@ const programs = [
     title: "Yoga",
     description:
       "Enhance flexibility, balance, and mindfulness with guided yoga sessions.",
-    icon: "/images/program_yoga.png",
+    icon: "/images/program_yoga.webp",
   },
   {
     title: "Crossfit",
     description:
       "High-intensity training to build strength, endurance, and agility.",
-    icon: "/images/program_crossfit.png",
+    icon: "/images/program_crossfit.webp",
   },
   {
     title: "Strength Training",
     description:
       "Build muscle and improve overall strength with expert trainers.",
-    icon: "/images/program_training.png",
+    icon: "/images/program_training.webp",
   },
   {
     title: "Personal Training",
     description:
       "One-on-one coaching tailored to your goals and fitness level.",
-    icon: "/images/program_personal.png",
+    icon: "/images/program_personal.webp",
   },
 ];
 

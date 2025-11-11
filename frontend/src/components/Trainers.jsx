@@ -9,7 +9,7 @@ const trainers = [
     name: "Gajendra Kumar",
     specialization: "Strength & Conditioning",
     bio: "Gajendra is an expert in strength training and functional workouts with 3+ years of experience.",
-    image: "/images/trainer1.jpg",
+    image: "/images/trainer1.webp",
     social: {
       instagram: "https://www.instagram.com/_gajen_000?igsh=NWs0ZjVxdjM2Z2N1",
       whatsapp: "https://api.whatsapp.com/send/?phone=916268703761&text&type=phone_number&app_absent=0",
@@ -19,7 +19,7 @@ const trainers = [
     name: "Jitendra Kumar",
     specialization: "Diet & Nutrition",
     bio: "Jitendra helps clients achieve their health goals through personalized diet plans and nutritional guidance.",
-    image: "/images/trainer2.jpg",
+    image: "/images/trainer2.webp",
     social: {
       instagram: "https://www.instagram.com/jitendrakumar3621?igsh=azR0c2Zrc3d2dnd6",
       whatsapp: "https://api.whatsapp.com/send/?phone=919340453142&text&type=phone_number&app_absent=0",

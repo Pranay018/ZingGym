@@ -4,30 +4,30 @@ import '../index.css';
 
 const DEFAULT_IMAGES = [
   {
-    src: '/images/member1.jpg',
+    src: '/images/member1.webp',
     alt: 'Abstract art'
   },
   {
-    src: '/images/member2.jpg',
+    src: '/images/member2.webp',
     alt: 'Modern sculpture'
   },
   {
-    src: '/images/member3.jpg',
+    src: '/images/member3.webp',
     alt: 'Digital artwork'
   },
   {
-    src: '/images/member4.jpg',
+    src: '/images/member4.webp',
     alt: 'Contemporary art'
   },
   {
-    src: '/images/zing_logo.png',
+    src: '/images/zing_logo.webp',
     alt: 'Geometric pattern'
   },
   {
-    src: '/images/gallery_1.jpg',
+    src: '/images/gallery_1.webp',
     alt: 'Textured surface'
   },
-  { src: '/images/gallery_2.jpg',
+  { src: '/images/gallery_2.webp',
     alt: 'Social media image' 
   }
 ];
