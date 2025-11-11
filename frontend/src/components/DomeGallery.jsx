@@ -29,6 +29,10 @@ const DEFAULT_IMAGES = [
   },
   { src: '/images/gallery_2.webp',
     alt: 'Social media image' 
+  },
+  {
+    src:'/images/testimonial1.webp',
+    alt:'pranay'
   }
 ];
 

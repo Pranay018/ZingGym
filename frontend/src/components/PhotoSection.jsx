@@ -7,7 +7,7 @@ const PhotoSection = () => {
       className="photo-section"
       style={{
         width: "100vw",
-        height: "100vh",
+        height: "95vw",
         position: "relative",
         overflow: "hidden",
         color: "#fff",
