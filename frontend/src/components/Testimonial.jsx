@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "../index.css";
 
 const reviews = [
@@ -37,21 +37,34 @@ const reviews = [
 const TestimonialsSection = () => {
   const marqueeRef = useRef(null);
   const speed = 0.5; // pixels per frame
+  const [duplicatedReviews, setDuplicatedReviews] = useState([]);
 
   useEffect(() => {
     const marquee = marqueeRef.current;
     if (!marquee) return;
 
-    // Duplicate testimonials for seamless loop
-    marquee.innerHTML += marquee.innerHTML;
+    // Duplicate reviews enough times to cover container width
+    const containerWidth = marquee.parentElement.offsetWidth;
+    let temp = [...reviews];
+    while (true) {
+      const totalWidth = temp.length * 250; // approximate card width + gap
+      if (totalWidth >= containerWidth * 2) break;
+      temp = [...temp, ...reviews];
+    }
+    setDuplicatedReviews(temp);
 
+  }, []);
+
+  useEffect(() => {
+    const marquee = marqueeRef.current;
+    if (!marquee) return;
     let offset = 0;
     let animationFrameId;
 
     const animate = () => {
       offset -= speed;
       if (offset <= -marquee.scrollWidth / 2) {
-        offset = 0; // reset to start
+        offset = 0; // reset seamlessly
       }
       marquee.style.transform = `translateX(${offset}px)`;
       animationFrameId = requestAnimationFrame(animate);
@@ -59,7 +72,6 @@ const TestimonialsSection = () => {
 
     animate();
 
-    // Pause on hover
     const pause = () => cancelAnimationFrame(animationFrameId);
     const resume = () => animate();
 
@@ -71,15 +83,14 @@ const TestimonialsSection = () => {
       marquee.removeEventListener("mouseenter", pause);
       marquee.removeEventListener("mouseleave", resume);
     };
-  }, []);
+  }, [duplicatedReviews]);
 
   return (
     <section className="testimonials-section" id="testimonials">
       <h2 className="testimonials-title">What Our Members Say 💪</h2>
-
       <div className="marquee-wrapper">
         <div className="marquee" ref={marqueeRef}>
-          {reviews.map((review, index) => (
+          {duplicatedReviews.map((review, index) => (
             <div className="testimonial-card" key={index}>
               <div className="testimonial-header">
                 <img
@@ -103,3 +114,4 @@ const TestimonialsSection = () => {
 };
 
 export default TestimonialsSection;
+
