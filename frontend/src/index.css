@@ -1699,20 +1699,35 @@ main.sphere-main {
   text-transform: uppercase;
 }
 
+.marquee-wrapper {
+  overflow: hidden;
+  height: 300px;
+  width: 100%;
+  position: relative;
+  touch-action: pan-y; /* allow smooth scrolling vertically */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 /* Full-width marquee area */
 .marquee {
   display: flex;
   align-items: center;
   gap: 2rem;
   width: max-content;
-  animation: slideAcross 40s linear infinite;
+  animation: slideAcross 30s linear infinite;
   will-change: transform;
+  transform: translate3d(0, 0, 0);
 }
-
+.marquee-wrapper:hover .marquee,
+.marquee-wrapper:active .marquee {
+  animation-play-state: paused;
+}
 /* Floating review cards */
 .testimonial-card {
-  min-width: 240px !important;  /* Smaller width + override */
-  max-width: 240px !important; 
+  min-width: 230px !important;  /* Smaller width + override */
+  max-width: 230px !important; 
   background: rgba(255, 165, 76, 0.1);
   border: 1px solid rgba(255, 165, 76, 0.3);
   border-radius: 18px;
