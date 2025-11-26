@@ -1,5 +1,5 @@
 # Project Name
-A modern React + Vite frontend website.
+Zinggym
 
 ## Tech Stack
 - React
